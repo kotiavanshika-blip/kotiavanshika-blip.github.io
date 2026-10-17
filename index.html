@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -80,27 +80,30 @@
   <h2 class="title">Projects</h2>
   <div class="grid projects">
     <article class="polaroid">
-      <div class="photo sage"><span class="hand">2026</span></div>
+      <div class="photo sage"><img src="media/companion-2.png" alt="" loading="lazy" style="object-position:top"></div>
       <h3>Smart Student Companion</h3>
       <p class="meta">Mobile App / Android</p>
       <p>An Android application that turns messy student task lists into structured, time-based daily study schedules. It tackles time management and academic planning.</p>
       <ul class="tags"><li>Android Studio</li><li>Java / Kotlin</li></ul>
+      <button type="button" class="btn small media-btn" data-media="companion">See app screens</button>
     </article>
 
     <article class="polaroid">
-      <div class="photo peach"><span class="hand">AI Engineering</span></div>
+      <div class="photo peach"><img src="media/finance-poster.jpg" alt="" loading="lazy"></div>
       <h3>Personal Finance Crisis Manager</h3>
       <p class="meta">Multi-Agent AI System</p>
       <p>A multi-agent AI system that detects spending stress when expenses exceed budgets. Cooperating agents (User, Coordinator, Expense, Budget, Subscription, Needs vs. Wants, Savings and Recommendation) work together to create a Financial Recovery Plan.</p>
       <p class="extra">It also tracks Transaction Stress Levels (Happy, Regret or Neutral) to understand emotional spending patterns.</p>
+      <button type="button" class="btn small media-btn" data-media="finance">Watch demo</button>
     </article>
 
     <article class="polaroid">
-      <div class="photo sky"><span class="hand">Prototype</span></div>
+      <div class="photo sky"><img src="media/ambulance-poster.jpg" alt="" loading="lazy"></div>
       <h3>AI-Powered Smart Ambulance System</h3>
       <p class="meta">AI / ML / Cloud · Academic prototype</p>
       <p>An academic prototype exploring AI, machine learning and AWS cloud technologies to streamline real-time emergency response coordination between ambulances and hospitals.</p>
       <ul class="tags"><li>Python</li><li>AWS</li><li>Machine Learning concepts</li></ul>
+      <button type="button" class="btn small media-btn" data-media="ambulance">Watch demo</button>
     </article>
   </div>
 </section>
@@ -158,15 +161,20 @@
     <p class="lead">Got an idea, a project, or advice for a student who's still learning? I'd love to hear from you.</p>
     <p><a class="btn primary" href="mailto:kotiavanshika@gmail.com">kotiavanshika@gmail.com</a></p>
     <ul class="social">
-      <!-- TODO: replace the "#" links below with your real profile URLs before submitting -->
-      <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
-      <!-- LinkedIn: add <li><a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a></li> -->
+      <li><a href="https://github.com/kotiavanshika-blip" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/vanshika-kotia-798a4b386" target="_blank" rel="noopener">LinkedIn</a></li>
     </ul>
     <p class="hand big">Still learning, still building.</p>
     <p class="small">© <span id="year"></span> Vanshika Kotia · Mumbai, India</p>
   </div>
 </footer>
 
-<script src="script.js?v=2" defer></script>
+<dialog id="mediaModal" aria-labelledby="mmTitle">
+  <button type="button" class="close" id="mmClose" aria-label="Close">×</button>
+  <h3 id="mmTitle"></h3>
+  <div id="mmBody"></div>
+</dialog>
+
+<script src="script.js?v=3" defer></script>
 </body>
 </html>
